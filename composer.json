@@ -1,0 +1,19 @@
+{
+    "name": "afrizalm/certainty-factor",
+    "description": "Package sederhana untuk menghitung Sistem Pakar menggunakan metode Certainty Factor",
+    "type": "library",
+    "require": {
+        "php": ">=7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "afrizal423",
+            "email": "afrizal2499@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"afrizalmy\\": "src/"}
+    },
+    "minimum-stability": "dev"
+}
