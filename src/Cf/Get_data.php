@@ -1,6 +1,6 @@
 <?php
 
-namespace afrizalmy\Cf;
+namespace afrizalmy\CertaintyFactor\Cf;
 
 class Get_data
 {

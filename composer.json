@@ -1,5 +1,5 @@
 {
-    "name": "afrizalm/certainty-factor",
+    "name": "afrizalmy/certainty_factor",
     "description": "Package sederhana untuk menghitung Sistem Pakar menggunakan metode Certainty Factor",
     "type": "library",
     "require": {
@@ -13,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"afrizalmy\\": "src/"}
+        "psr-4": {"afrizalmy\\CertaintyFactor\\": "src/"}
     },
     "minimum-stability": "dev"
 }

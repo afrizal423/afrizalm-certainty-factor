@@ -1,8 +1,8 @@
 <?php
 
-namespace afrizalmy\Tester;
+namespace afrizalmy\CertaintyFactor\Tester;
 
-use afrizalmy\Cf\Get_data;
+use afrizalmy\CertaintyFactor\Cf\Get_data;
 
 class Test
 {
