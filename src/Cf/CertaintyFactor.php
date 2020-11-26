@@ -51,21 +51,43 @@ class CertaintyFactor
                     // echo $hasilcombin,'<br>';
 
                     if (count($kombin)-1 == 1 ) {
-                        $hasil_combine[$getcase[$i]['nama_case']] = $hasilcombin;
+                        // $hasil_combine[$getcase[$i]['nama_case']] = $hasilcombin;
+                        $hasil_combine[$i]["nama_case"] = $getcase[$i]['nama_case'];
+                        $hasil_combine[$i]["hasil_perhitungan"] = $hasilcombin;
                         break;
                     }
                     # code...
                 } else {
                     if ($z+1 == count($kombin)) {
-                        $hasil_combine[$getcase[$i]['nama_case']] = $hasilcombin;
+                        $hasil_combine[$i]["nama_case"] = $getcase[$i]['nama_case'];
+                        $hasil_combine[$i]["hasil_perhitungan"] = $hasilcombin;
                         break;
                     }
                     $hasilcombin = $hasilcombin + $kombin[$z+1] * ( 1.0 - $hasilcombin );
                 }
             }
         }
+        $penentuan = [];
+        $tmp= 0;
+        for ($i=0; $i < count($hasil_combine); $i++) { 
+            if ($tmp < $hasil_combine[$i]['hasil_perhitungan']) {
+                # code...
+                $obj = (object) [
+                    'nama_case' => $hasil_combine[$i]['nama_case'],
+                    'hasil_perhitungan' => $hasil_combine[$i]['hasil_perhitungan']
+                ];
+                $tmp = $hasil_combine[$i]['hasil_perhitungan'];
+            }
+        }
+        $hasilakhir = (object) [
+            'list_case' => $hasil_combine,
+            'hasil_pakar' => $obj
+        ];
 
-        print_r($hasil_combine);
+        // $hasilakhir->
+        return $hasilakhir;
+        // echo json_encode($hasilakhir);
+        // echo json_encode($hasil_combine);
     }
 
 }
