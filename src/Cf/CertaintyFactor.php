@@ -52,6 +52,7 @@ class CertaintyFactor
 
                     if (count($kombin)-1 == 1 ) {
                         // $hasil_combine[$getcase[$i]['nama_case']] = $hasilcombin;
+                        $hasil_combine[$i]["kode_case"] = $getcase[$i]['kode_case'];
                         $hasil_combine[$i]["nama_case"] = $getcase[$i]['nama_case'];
                         $hasil_combine[$i]["hasil_perhitungan"] = $hasilcombin;
                         break;
@@ -59,6 +60,7 @@ class CertaintyFactor
                     # code...
                 } else {
                     if ($z+1 == count($kombin)) {
+                        $hasil_combine[$i]["kode_case"] = $getcase[$i]['kode_case'];
                         $hasil_combine[$i]["nama_case"] = $getcase[$i]['nama_case'];
                         $hasil_combine[$i]["hasil_perhitungan"] = $hasilcombin;
                         break;
@@ -73,6 +75,7 @@ class CertaintyFactor
             if ($tmp < $hasil_combine[$i]['hasil_perhitungan']) {
                 # code...
                 $obj = (object) [
+                    'kode_case' => $hasil_combine[$i]['kode_case'],
                     'nama_case' => $hasil_combine[$i]['nama_case'],
                     'hasil_perhitungan' => $hasil_combine[$i]['hasil_perhitungan']
                 ];
