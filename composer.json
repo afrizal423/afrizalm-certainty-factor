@@ -2,6 +2,13 @@
     "name": "afrizalmy/certainty_factor",
     "description": "Package sederhana untuk menghitung Sistem Pakar menggunakan metode Certainty Factor",
     "type": "library",
+    "keywords": [
+        "pakar",
+        "sistem pakar",
+        "certainty factor"
+    ],
+    "homepage": "https://github.com/afrizal423/afrizalm-certainty-factor",
+    "prefer-stable": true,
     "require": {
         "php": ">=7.1"
     },
@@ -9,7 +16,9 @@
     "authors": [
         {
             "name": "afrizal423",
-            "email": "afrizal2499@gmail.com"
+            "email": "afrizal2499@gmail.com",
+            "homepage": "https://afrizalmy.com/",
+            "role": "Developer"
         }
     ],
     "autoload": {

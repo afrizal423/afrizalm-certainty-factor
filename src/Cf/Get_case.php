@@ -2,6 +2,8 @@
 
 namespace afrizalmy\CertaintyFactor\Cf;
 
+use afrizalmy\CertaintyFactor\ErrorHandling\HandleError;
+
 class Get_case
 {
     /**
@@ -12,7 +14,6 @@ class Get_case
     /**
      * @var array
      */
-    private $dt_pretty = [];
     private $case = [];
 
     public function data(array $sempeldata)
@@ -20,6 +21,7 @@ class Get_case
         $tmp = [];
         for ($i=0; $i < count($sempeldata) ; $i++) { 
             # code...
+            HandleError::HandleData($sempeldata[$i]);
             $tmp['kode_case'] = $sempeldata[$i]['kode_case'];
             $tmp['nama_case'] = $sempeldata[$i]['nama_case'];
             $tmp['indeks'] = $i;
@@ -28,9 +30,6 @@ class Get_case
             }
             array_push($this->dt, $sempeldata[$i]);
         }
-        // header('Content-Type: application/json');
-        // echo json_encode($this->case);
-        // $this->dt = array_merge($this->dt, $sempeldata);
         return $this->case;
     }
 
@@ -41,12 +40,6 @@ class Get_case
                 
             }
         }
-    }
-
-    public function printdata()
-    {
-        header('Content-Type: application/json');
-        echo json_encode($this->case);
     }
     
 }
