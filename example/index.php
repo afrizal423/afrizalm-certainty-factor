@@ -4,20 +4,19 @@ require '../vendor/autoload.php';
 
 use afrizalmy\CertaintyFactor\Cf\CertaintyFactor;
 
-$cf = new CertaintyFactor();
 /**
  * Kita ambil contoh data dan contoh inputan user
  */
-$contoh_data = $cf->TestData();
-$contoh_input = $cf->TestDataInput();
+$contoh_data = CertaintyFactor::TestData();
+$contoh_input = CertaintyFactor::TestDataInput();
 
 /**
  * Lalu hitung CFnya
  */
-$hasil = $cf->ProsesHitung($contoh_data, $contoh_input);
+$hasil = CertaintyFactor::ProsesHitung($contoh_data, $contoh_input);
 
 /**
- * Output berupa JSON,
+ * Dalam contoh ini output berupa JSON,
  * silahkan berkreasi sesuai logika aplikasi anda
  */
 header('Content-Type: application/json');

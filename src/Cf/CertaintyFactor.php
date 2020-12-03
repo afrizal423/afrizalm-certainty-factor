@@ -9,19 +9,19 @@ use afrizalmy\CertaintyFactor\ErrorHandling\HandleError;
 
 class CertaintyFactor
 {
-    public function TestData()
+    public static function TestData()
     {
         $testdata = new TestData();
         return $testdata->testdata();
     }
 
-    public function TestDataInput()
+    public static function TestDataInput()
     {
         $testdata = new TestInputData();
         return $testdata->testinput();
     }
 
-    public function ProsesHitung($data, $inputan)
+    public static function ProsesHitung($data, $inputan)
     {
         $case = new Get_case();
         $getcase = $case->data($data);
