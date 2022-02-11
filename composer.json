@@ -10,7 +10,7 @@
     "homepage": "https://github.com/afrizal423/afrizalm-certainty-factor",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.1"
+        "php": "^7.3"
     },
     "license": "MIT",
     "authors": [

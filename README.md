@@ -4,7 +4,7 @@
 
 # Expert System With Certainty Factor Using PHP
 
-Pakcage perhitungan sistem pakar dengan certainty factor menggunakan PHP. 
+Package perhitungan sistem pakar dengan certainty factor menggunakan PHP. 
 
 ## Installation
 
@@ -104,6 +104,7 @@ Pakcage perhitungan sistem pakar dengan certainty factor menggunakan PHP.
 
 ## Hitung Manual
 - Silahkan lihat file [.ods](manual.ods) ini untuk perhitungan manual dari contoh inputan diatas 
+- Referensi perhitungan manual dengan studi kasus lain terdapat difile [manual-tambahan.xlsx](manual-tambahan.xlsx)
 
 ## Referensi
 1. [SISTEM PAKAR PENDIAGNOSA PENYAKIT ANAK MENGGUNAKAN CERTAINTY FACTOR (CF)](https://ejournal.unsrat.ac.id/index.php/JIS/article/view/705/0)
@@ -111,18 +112,15 @@ Pakcage perhitungan sistem pakar dengan certainty factor menggunakan PHP.
 3. [SISTEM PAKAR DIAGNOSA PENYAKIT PADA AYAM MENGGUNAKAN METODE CERTAINTY FACTOR](https://www.scribd.com/document/431280343/Dokumentasi-Sistem-Pakar-Ayam-Skripsi)
 4. [SISTEM PAKAR penyelesaian metode Certainty Factor
 ](http://ariecandra02.blogspot.com/2017/05/sistem-pakar-penyelesaian-metode_64.html)
+5. [Sistem Pakar Menggunakan Metode Certainty Factor untuk Estetika Kulit Wanita dalam Menjaga Kesehatan](https://www.jidt.org/index.php/jidt/article/view/70)
 
 
 ## Disclaimer
 
 * <b>Dilarang keras</b> di perjual-belikan, source ini saya publikasi untuk keperluan belajar saja.
+* Silahkan ubah sesuai studi kasus anda. Untuk menghargai pembuatan package ini saya menerima donasi dari anda.
 
 ## Donation
 
-* Bagi yang ingin berdonasi terbentuknya sistem ini, siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya. Via Gopay / Dana.
-
-### Gopay<br>
-<img src="img/gpy.png" height="400"> <br>
-
-### Dana<br>
-<img src="img/dana.png" height="350">
+* Bagi yang ingin berdonasi terbentuknya sistem ini, siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
+    Silahkan donasi di [sini](https://saweria.co/afrizalmy)
